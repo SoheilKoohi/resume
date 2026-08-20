@@ -8,7 +8,8 @@ cv:
       username: soheilkoohi
   sections:
     summary:
-      - Principal Machine Learning Engineer with 9+ years building production AI systems at scale. Combines ML roadmap ownership across multiple product areas with hands-on technical leadership of cross-functional teams of 6-12 engineers, from hiring and mentoring through delivery. Technical depth across MLOps, computer vision, and agentic LLM systems, backed by high-throughput backend engineering in Python and Go. Relocating to the UK/EU.
+      - Principal Machine Learning Engineer with 9+ years building production AI systems at scale. Combines ML roadmap ownership across multiple product areas with hands-on technical leadership of cross-functional teams of 6-12 engineers, from hiring and mentoring through delivery. Technical depth across MLOps, computer vision, and agentic LLM systems, backed by high-throughput backend engineering in Python and Go.
+
 
     experience:
       - company: Snapp!
@@ -18,12 +19,11 @@ cv:
         end_date: present
         highlights:
           - Own the machine learning roadmap across Safety, Driver Onboarding, and Support Automation, setting quarterly technical direction with the CTO; designed the ML hiring and interview pipeline and made the final technical call on 3-5 engineering hires.
-          - Architected a graph-based state machine support LLM agent in Go, orchestrating complex language model workflows across specialized nodes (toxicity safeguards, intent-based triage, external tool-calling).
-          - Scaled the Go-based agentic architecture on Kubernetes using Helm, evaluating and integrating memory layers like Redis and ClickHouse to manage state, successfully automating 85% of all support tickets.
-          - Developed an unsupervised clustering pipeline segmenting drivers into three safety tiers from historical ban records, trip ratings, and NLP analysis of passenger comments, serving as a core upstream feature for multiple cross-functional intervention workflows.
+          - Architected a graph-based state machine support LLM agent in Go, orchestrating language model workflows across specialized nodes (toxicity safeguards, intent-based triage, external tool-calling).
+          - Scaled the Go-based agentic architecture on Kubernetes using Helm, evaluating and integrating memory layers like Redis and ClickHouse to manage state, automating 85% of all support tickets.
+          - Developed an unsupervised clustering pipeline segmenting drivers into three safety tiers from ban records, trip ratings, and NLP analysis of passenger comments, now a core upstream feature for cross-functional intervention workflows.
           - Engineered a real-time trip safety scoring engine analyzing live route deviations, time-of-day, and geographic isolation with a Gaussian Mixture Model (GMM); A/B tests showed a 10x increase in unsafe ride recall at only a 2x increase in back-office alarms.
           - Architected a compressed (1MB) on-device computer vision pipeline across iOS, Android, and Web performing real-time object detection and image quality assessment on onboarding documents, cutting wrong submissions by 50% and driver sign-up time by 30%.
-          - Built local training and auto-labeling workflows for Persian document datasets using the MLX framework and X-AnyLabeling.
 
       - company: Snapp!
         position: ML Technical Lead
@@ -32,10 +32,10 @@ cv:
         end_date: 2025
         highlights:
           - Led and mentored a 6-person cross-functional data team to rebuild the core ETA product, architecting a deep learning residual model (adapting Uber's DeeprETA) on top of the routing engine, improving driver ETA accuracy by 5%.
-          - Deployed highly resilient model serving pipelines using Nvidia Triton and Kubernetes, successfully handling up to 3000 RPS with under 100ms latency.
+          - Deployed resilient model serving pipelines on Nvidia Triton and Kubernetes, handling 3000 RPS at under 100ms latency.
           - Architected a fully automated MLOps pipeline with Apache Airflow, MLflow, and DVC, adding model monitoring and drift detection to cut the distributed retraining and deployment cycle from quarterly to weekly with full reproducibility.
           - Engineered a high-throughput, real-time speed generation pipeline using Apache Kafka and Kafka Streams to ingest and process ~1 million spatial-temporal location messages per second.
-          - Designed scalable historical speed imputation algorithms using Alternating Least Squares (ALS), Kalman filters, and graph-based methods to predict traffic flow across unobserved street segments.
+          - Designed historical speed imputation algorithms using Alternating Least Squares (ALS), Kalman filters, and graph-based methods, increasing speed coverage across unobserved street segments by 60%.
 
       - company: Neoxi
         position: Senior Machine Learning Engineer
@@ -43,8 +43,8 @@ cv:
         start_date: 2022
         end_date: 2023
         highlights:
-          - Architected a scalable multi-camera ReID tracking system, extracting high-dimensional feature embeddings on edge devices and streaming them to centralized servers via Apache Kafka.
-          - Optimized on-device inference using Nvidia DeepStream, successfully detecting and tracking pedestrians and tiny objects in real-time edge environments, improving tracking mAP by 17% over 6 months.
+          - Architected a multi-camera ReID tracking system, extracting high-dimensional feature embeddings on edge devices and streaming them to centralized servers via Apache Kafka.
+          - Optimized on-device inference using Nvidia DeepStream, detecting and tracking pedestrians and tiny objects in real-time edge environments, improving tracking mAP by 17% over 6 months.
           - Engineered the server-side cross-camera matching logic, upgrading the embedding vector database from Redis to Milvus, scaling to hundreds of concurrent camera feeds and millions of active embeddings.
           - Managed end-to-end training and deployment infrastructure on AWS SageMaker and ECS, cutting development time by 70% with 100% deployment automation.
 
@@ -56,7 +56,7 @@ cv:
         highlights:
           - Led a 12-person cross-functional team (ML, Backend, Frontend, Design) from research through production release, owning the technical roadmap and mentoring the ML engineers; promoted into the role from within the team.
           - Led end-to-end development of a COVID-19 back-to-work SaaS product for real-time social distancing and face mask detection, integrating low-cost edge clusters with enterprise CCTV networks to process 20+ concurrent camera feeds.
-          - Engineered an "Adaptive Learning" pipeline using knowledge distillation to compress large-scale object detection models into highly efficient, label-free architectures, optimizing gradient calculations to execute within strict 2GB RAM constraints on Jetson Nano devices.
+          - Engineered an "Adaptive Learning" pipeline using knowledge distillation to compress large-scale object detection models into efficient, label-free architectures, optimizing gradient calculations to execute within strict 2GB RAM constraints on Jetson Nano devices.
           - Integrated PyTorch models with TensorRT and TFLite for high-speed edge inference, achieving up to 130% reduction in inference time and >90% accuracy across 100+ edge devices.
 
       - company: IREEN
@@ -67,7 +67,7 @@ cv:
         highlights:
           - Designed a multimodal real-estate valuation system in TensorFlow 2, fusing structured property data with aerial, street-level imagery, and interior images via multi-branch Convolutional Neural Networks (CNNs), achieving 6% prediction error.
           - Engineered location features from the Google Places API, mapping neighborhood amenities into grid representations and improving baseline model accuracy by 4%.
-          - Deployed scalable, Dockerized inference services on GCP GPU virtual machines using FastAPI, delivering high-availability real-time predictions for the product frontend.
+          - Deployed Dockerized inference services on GCP GPU virtual machines using FastAPI, serving real-time predictions to the product frontend.
 
       - company: ISENSE
         position: Data Scientist
@@ -84,6 +84,7 @@ cv:
         degree: Bachelor of Science
         start_date: 2013
         end_date: 2017
+
 
     skills:
       - label: Languages
