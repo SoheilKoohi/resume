@@ -18,12 +18,12 @@ cv:
         start_date: 2026-03
         end_date: present
         highlights:
-          - Own the machine learning roadmap across Safety, Driver Onboarding, and Support Automation, setting quarterly technical direction with the CTO; designed the ML hiring and interview pipeline and made the final technical call on 3-5 engineering hires.
+          - Own the machine learning roadmap across Safety, Driver Signup, Support Automation, and ETA product, setting quarterly technical direction with the Director of Engineering; designed the ML hiring and interview pipeline and made the final technical call on 3-5 engineering hires.
           - Architected a graph-based state machine support LLM agent in Go, orchestrating language model workflows across specialized nodes (toxicity safeguards, intent-based triage, external tool-calling).
           - Scaled the Go-based agentic architecture on Kubernetes using Helm, evaluating and integrating memory layers like Redis and ClickHouse to manage state, automating 85% of all support tickets.
           - Developed an unsupervised clustering pipeline segmenting drivers into three safety tiers from ban records, trip ratings, and NLP analysis of passenger comments, now a core upstream feature for cross-functional intervention workflows.
           - Engineered a real-time trip safety scoring engine analyzing live route deviations, time-of-day, and geographic isolation with a Gaussian Mixture Model (GMM); A/B tests showed a 10x increase in unsafe ride recall at only a 2x increase in back-office alarms.
-          - Shipped a compressed (1MB) on-device computer vision pipeline across iOS, Android, and Web performing real-time object detection and image quality assessment on onboarding documents, cutting wrong submissions by 50% and driver sign-up time by 30%.
+          - Shipped a compressed (1MB) on-device computer vision pipeline across iOS, Android, and Web performing real-time object detection and image quality assessment on signing up documents, cutting wrong submissions by 50% and driver sign-up time by 30%.
 
       - company: Snapp!
         position: ML Technical Lead
@@ -32,7 +32,7 @@ cv:
         end_date: 2026-03
         highlights:
           - Led and mentored a 6-person cross-functional data team to rebuild the core ETA product, architecting a deep learning residual model (adapting Uber's DeeprETA) on top of the routing engine, improving driver ETA accuracy by 5%.
-          - Deployed resilient model serving pipelines on Nvidia Triton and Kubernetes, handling 3000 RPS at under 100ms latency.
+          - Deployed resilient model serving pipelines on Nvidia Triton and Kubernetes, handling 3000 RPS at under 10ms latency.
           - Architected a fully automated MLOps pipeline with Apache Airflow, MLflow, and DVC, adding model monitoring and drift detection to cut the distributed retraining and deployment cycle from quarterly to weekly with full reproducibility.
           - Engineered a high-throughput, real-time speed generation pipeline using Apache Kafka and Kafka Streams to ingest and process ~1 million spatial-temporal location messages per second.
           - Designed historical speed imputation algorithms using Alternating Least Squares (ALS), Kalman filters, and graph-based methods, increasing speed coverage across unobserved street segments by 60%.
