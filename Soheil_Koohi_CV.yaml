@@ -82,7 +82,7 @@ cv:
     education:
       - institution: University of Tehran
         area: Engineering Science (Mathematical Engineering)
-        degree: BS
+        degree: Bachelor of Science
         start_date: 2013
         end_date: 2017
 
@@ -103,3 +103,6 @@ design:
     bottom_margin: 1.2cm
     left_margin: 1.6cm
     right_margin: 1.6cm
+    show_top_note: false
+  typography:
+    alignment: justified-with-no-hyphenation
