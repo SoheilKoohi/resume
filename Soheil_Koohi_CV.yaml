@@ -7,7 +7,7 @@ cv:
       username: soheilkoohi
   sections:
     summary:
-      - Principal Machine Learning Engineer with nearly a decade of experience designing scalable MLOps infrastructure, end-to-end computer vision pipelines, and agentic AI architectures. Bridges complex mathematical modeling with high-throughput backend engineering in Python and Go, leading cross-functional teams to deliver production-grade distributed AI systems in high-concurrency environments.
+      - Principal Machine Learning Engineer with 9+ years building production AI systems at scale. Combines ML roadmap ownership across multiple product areas with hands-on technical leadership of cross-functional teams of 6-12 engineers, from hiring and mentoring through delivery. Technical depth across MLOps, computer vision, and agentic LLM systems, backed by high-throughput backend engineering in Python and Go. Relocating to the UK/EU.
 
     experience:
       - company: Snapp!
@@ -16,12 +16,13 @@ cv:
         start_date: 2025
         end_date: present
         highlights:
+          - Own the machine learning roadmap across Safety, Driver Onboarding, and Support Automation, setting quarterly technical direction with the CTO; designed the ML hiring and interview pipeline and made the final technical call on 3-5 engineering hires.
           - Architected a graph-based state machine support LLM agent in Go, orchestrating complex language model workflows across specialized nodes (toxicity safeguards, intent-based triage, external tool-calling).
           - Scaled the Go-based agentic architecture on Kubernetes using Helm, evaluating and integrating memory layers like Redis and ClickHouse to manage state, successfully automating 85% of all support tickets.
           - Developed an unsupervised clustering pipeline segmenting drivers into three safety tiers from historical ban records, trip ratings, and NLP analysis of passenger comments, serving as a core upstream feature for multiple cross-functional intervention workflows.
           - Engineered a real-time trip safety scoring engine analyzing live route deviations, time-of-day, and geographic isolation with a Gaussian Mixture Model (GMM); A/B tests showed a 10x increase in unsafe ride recall at only a 2x increase in back-office alarms.
-          - Architected a highly compressed (1MB) on-device computer vision pipeline across iOS, Android, and Web clients performing real-time object detection and image quality assessment on driver onboarding documents, cutting wrong document submissions by 50%.
-          - Orchestrated local model training and auto-labeling workflows for Persian document datasets utilizing the MLX framework and X-AnyLabeling, accelerating the driver sign-up process by 30%.
+          - Architected a compressed (1MB) on-device computer vision pipeline across iOS, Android, and Web performing real-time object detection and image quality assessment on onboarding documents, cutting wrong submissions by 50% and driver sign-up time by 30%.
+          - Built local training and auto-labeling workflows for Persian document datasets using the MLX framework and X-AnyLabeling.
 
       - company: Snapp!
         position: ML Technical Lead
@@ -29,11 +30,11 @@ cv:
         start_date: 2023
         end_date: 2025
         highlights:
-          - Directed a 6-person cross-functional data team to evolve the core ETA product, architecting a deep learning residual model (adapting Uber's DeeprETA) on top of the routing engine, improving driver ETA accuracy by 5%.
+          - Led and mentored a 6-person cross-functional data team to rebuild the core ETA product, architecting a deep learning residual model (adapting Uber's DeeprETA) on top of the routing engine, improving driver ETA accuracy by 5%.
           - Deployed highly resilient model serving pipelines using Nvidia Triton and Kubernetes, successfully handling up to 3000 RPS with under 100ms latency.
           - Architected a fully automated MLOps pipeline with Apache Airflow, MLflow, and DVC, adding model monitoring and drift detection to cut the distributed retraining and deployment cycle from quarterly to weekly with full reproducibility.
-          - Engineered a high-throughput, real-time speed generation pipeline utilizing Apache Kafka and Kafka Streams to ingest and process ~1 million spatial-temporal location messages per second.
-          - Designed scalable historical speed imputation algorithms leveraging Alternating Least Squares (ALS), Kalman filters, and graph-based methods to predict traffic flow across unobserved street segments.
+          - Engineered a high-throughput, real-time speed generation pipeline using Apache Kafka and Kafka Streams to ingest and process ~1 million spatial-temporal location messages per second.
+          - Designed scalable historical speed imputation algorithms using Alternating Least Squares (ALS), Kalman filters, and graph-based methods to predict traffic flow across unobserved street segments.
 
       - company: Neoxi
         position: Senior Machine Learning Engineer
@@ -44,7 +45,7 @@ cv:
           - Architected a scalable multi-camera ReID tracking system, extracting high-dimensional feature embeddings on edge devices and streaming them to centralized servers via Apache Kafka.
           - Optimized on-device inference using Nvidia DeepStream, successfully detecting and tracking pedestrians and tiny objects in real-time edge environments, improving tracking mAP by 17% over 6 months.
           - Engineered the server-side cross-camera matching logic, upgrading the embedding vector database from Redis to Milvus, scaling to hundreds of concurrent camera feeds and millions of active embeddings.
-          - Managed end-to-end model training and deployment infrastructure, leveraging AWS SageMaker and ECS, achieving a 70% reduction in development time and 100% deployment automation.
+          - Managed end-to-end training and deployment infrastructure on AWS SageMaker and ECS, cutting development time by 70% with 100% deployment automation.
 
       - company: Galliot
         position: ML Team Lead
@@ -52,10 +53,9 @@ cv:
         start_date: 2020
         end_date: 2022
         highlights:
-          - Directed a 12-person cross-functional engineering team (ML, Backend, Frontend, Design), earning a rapid promotion by demonstrating strong architectural orchestration and product delivery.
+          - Led a 12-person cross-functional team (ML, Backend, Frontend, Design) from research through production release, owning the technical roadmap and mentoring the ML engineers; promoted into the role from within the team.
           - Led end-to-end development of a COVID-19 back-to-work SaaS product for real-time social distancing and face mask detection, integrating low-cost edge clusters with enterprise CCTV networks to process 20+ concurrent camera feeds.
-          - Led the development of the AWS-hosted customer backend and frontend dashboards, featuring spatial violation heatmaps and real-time alerting.
-          - Engineered an "Adaptive Learning" pipeline utilizing knowledge distillation to compress large-scale object detection models into highly efficient, label-free architectures, optimizing gradient calculations to execute within strict 2GB RAM constraints on Jetson Nano devices.
+          - Engineered an "Adaptive Learning" pipeline using knowledge distillation to compress large-scale object detection models into highly efficient, label-free architectures, optimizing gradient calculations to execute within strict 2GB RAM constraints on Jetson Nano devices.
           - Integrated PyTorch models with TensorRT and TFLite for high-speed edge inference, achieving up to 130% reduction in inference time and >90% accuracy across 100+ edge devices.
 
       - company: IREEN
@@ -65,8 +65,7 @@ cv:
         end_date: 2020
         highlights:
           - Designed a multimodal real-estate valuation system in TensorFlow 2, fusing structured property data with aerial, street-level imagery, and interior images via multi-branch Convolutional Neural Networks (CNNs), achieving 6% prediction error.
-          - Engineered spatial and location-based features by integrating the Google Places API, mapping neighborhood amenities into structured grid representations, which improved overall baseline model accuracy by 4%.
-          - Built an automated scene detection pipeline to classify and route unstructured interior images using rule-based heuristics and CNN feature extraction, resolving data quality bottlenecks.
+          - Engineered location features from the Google Places API, mapping neighborhood amenities into grid representations and improving baseline model accuracy by 4%.
           - Deployed scalable, Dockerized inference services on GCP GPU virtual machines using FastAPI, delivering high-availability real-time predictions for the product frontend.
 
       - company: ISENSE
@@ -76,8 +75,7 @@ cv:
         end_date: 2018
         highlights:
           - Engineered data-driven Structural Health Monitoring (SHM) models for critical infrastructure using System Identification and subspace methods in Python and MATLAB, increasing prediction precision by 30%.
-          - Developed an interactive MATLAB visualization suite to translate complex dynamic system models into actionable safety insights for non-technical stakeholders.
-          - Led data science initiatives as the sole technical ML expert within an 8-person startup, automating and accelerating structural analysis while mentoring civil engineers in data science workflows.
+          - Led data science as the sole ML expert in an 8-person startup, building MATLAB visualization tools that translated dynamic system models into safety insights for non-technical stakeholders and mentoring civil engineers in data science workflows.
 
     education:
       - institution: University of Tehran
@@ -96,7 +94,7 @@ cv:
       - label: MLOps & Infrastructure
         details: Kubernetes, Helm, ArgoCD, Docker, Terraform, CI/CD, Git, Apache Kafka, Apache Spark, Apache Airflow, MLflow, DVC, AWS, GCP
       - label: Domains
-        details: Computer Vision, NLP, Time Series Forecasting, Recommendation Systems, A/B Testing & Experimentation, Model Monitoring
+        details: Computer Vision, NLP, Forecasting, Recommender Systems, A/B Testing, Model Monitoring
       - label: Databases & State
         details: PostgreSQL, Redis, ClickHouse, Milvus, MongoDB
 
