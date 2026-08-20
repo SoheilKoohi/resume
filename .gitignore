@@ -1,6 +1,8 @@
 # Build output — regenerate with `make` or the GitHub Action
 rendercv_output/
 site/
+linkedin/preview.html
+__pycache__/
 
 # macOS
 .DS_Store

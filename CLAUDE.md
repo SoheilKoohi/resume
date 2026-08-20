@@ -94,6 +94,24 @@ Content constraints that have been enforced so far, worth preserving:
   stripped; do not reintroduce them.
 - Opening verbs are deliberately varied — check for repetition after edits.
 
+## LinkedIn copy
+
+`linkedin/content.py` is the source of truth for the LinkedIn profile: headline,
+About, a two-sentence intro plus bullets per role, and 50 skills in LinkedIn's
+own taxonomy. `linkedin/build.py` renders it to `linkedin/preview.html`
+(gitignored) via `make linkedin` — that file is layout only, so profile edits go
+in `content.py`.
+
+The page is published as a private Artifact at
+`https://claude.ai/code/artifact/a10e89d5-b3b6-407a-94ea-d53c2d50e992`. Pass
+that URL when republishing, or a second artifact is created instead of updating
+the existing one.
+
+`content.py` also carries LinkedIn's field limits in `LIMITS`; the build prints
+nothing about overflow, so check the counters on the rendered page after editing
+copy. Role bullets are deliberately copied from the CV — when the YAML changes,
+they need updating here by hand.
+
 ## Auditing
 
 `.claude/skills/` holds 23 vendored resume and job-search skills (see
