@@ -2,6 +2,7 @@ cv:
   name: Soheil Koohi
   location: Tehran, Iran
   email: soheil.koohi@gmail.com
+  phone: tel:+98-936-721-6152
   social_networks:
     - network: LinkedIn
       username: soheilkoohi
@@ -108,3 +109,6 @@ design:
     show_top_note: false
   typography:
     alignment: justified-with-no-hyphenation
+  header:
+    connections:
+      phone_number_format: international
