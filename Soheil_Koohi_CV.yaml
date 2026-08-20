@@ -48,7 +48,7 @@ cv:
           - Rebuilt the server-side cross-camera matching logic, upgrading the embedding vector database from Redis to Milvus, scaling to hundreds of concurrent camera feeds and millions of active embeddings.
           - Managed end-to-end training and deployment infrastructure on AWS SageMaker and ECS, cutting development time by 70% with 100% deployment automation.
 
-      - company: Galliot
+      - company: UVEA
         position: ML Team Lead
         location: Remote, USA
         start_date: 2020-01

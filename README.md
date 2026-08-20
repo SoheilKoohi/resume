@@ -64,25 +64,6 @@ They load automatically when working in this repo — see
 They read resumes as Markdown, so feed them `rendercv_output/Soheil_Koohi_CV.md`
 from `make build` and apply accepted changes back into the YAML.
 
-## LinkedIn
-
-`linkedin/content.py` holds the LinkedIn profile copy — headline, About, per-role
-descriptions and the 50 skills — rewritten from this CV. It is the source of
-truth for the profile the same way the YAML is for the CV.
-
-```bash
-make linkedin   # renders linkedin/preview.html (gitignored)
-```
-
-The preview page shows each block with its real LinkedIn character limit and a
-copy button. `linkedin/build.py` is layout only; edit the words in
-`content.py`.
-
-Published (privately) at
-<https://claude.ai/code/artifact/a10e89d5-b3b6-407a-94ea-d53c2d50e992> — to
-update that page rather than create a new one, republish `linkedin/preview.html`
-passing that URL.
-
 ## CI
 
 `.github/workflows/render.yml` runs on every push to `main`:
