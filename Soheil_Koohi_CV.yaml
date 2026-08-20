@@ -16,10 +16,11 @@ cv:
         start_date: 2025
         end_date: present
         highlights:
-          - Architected a graph-based state machine support agent in Go, orchestrating complex language model workflows across specialized nodes (toxicity safeguards, intent-based triage, external tool-calling).
+          - Architected a graph-based state machine support LLM agent in Go, orchestrating complex language model workflows across specialized nodes (toxicity safeguards, intent-based triage, external tool-calling).
           - Scaled the Go-based agentic architecture on Kubernetes using Helm, evaluating and integrating memory layers like Redis and ClickHouse to manage state, successfully automating 85% of all support tickets.
-          - Engineered dynamic risk-assessment models for the Safety team, analyzing multi-modal driver features to cluster risk tiers, serving as a core upstream feature for multiple cross-functional intervention workflows.
-          - Architected a highly compressed (1MB) on-device computer vision pipeline deployed across iOS, Android, and Web clients to perform real-time bounding box localization for driver onboarding documents.
+          - Developed an unsupervised clustering pipeline to segment drivers into three distinct safety tiers (Safe, Medium, Unsafe) by extracting features from historical ban records, trip ratings, and NLP-based analysis of passenger comments, serving as a core upstream feature for multiple cross-functional intervention workflows.
+          - Engineered a real-time trip safety scoring engine analyzing live route deviations, time-of-day, and geographic isolation using Gaussian Mixture Model (GMM), achieving a 10x increase in unsafe ride recall while limiting the increase in total back-office alarms to just 2x.
+          - Architected a highly compressed (1MB) on-device computer vision pipeline deployed across iOS, Android, and Web clients to perform real-time object detection for driver onboarding documents and image quality assessment making the wrong document submission decrease by 50%.
           - Orchestrated local model training and auto-labeling workflows for Persian document datasets utilizing the MLX framework and X-AnyLabeling, accelerating the driver sign-up process by 30%.
 
       - company: Snapp!
@@ -28,8 +29,9 @@ cv:
         start_date: 2023
         end_date: 2025
         highlights:
-          - Directed a 6-person cross-functional data team to overhaul the core ETA product, architecting a deep learning residual model (adapting Uber's DeepETA) on top of the routing engine, improving driver ETA accuracy by 5%.
-          - Deployed highly resilient model serving pipelines using Nvidia Triton and Kubernetes, reducing deployment time to under 5 minutes and successfully handling up to 3000 RPS.
+          - Directed a 6-person cross-functional data team to evolve the core ETA product, architecting a deep learning residual model (adapting Uber's DeeprETA) on top of the routing engine, improving driver ETA accuracy by 5%.
+          - Deployed highly resilient model serving pipelines using Nvidia Triton and Kubernetes, successfully handling up to 3000 RPS with under 100ms latency.
+          - Architected a fully automated MLOps pipeline utilizing Apache Airflow, MLflow, and DVC, accelerating the distributed model retraining and deployment cycle from every 3 months to a weekly cadence while ensuring complete reproducibility.
           - Engineered a high-throughput, real-time speed generation pipeline utilizing Apache Kafka and Kafka Streams to ingest and process ~1 million spatial-temporal location messages per second.
           - Designed scalable historical speed imputation algorithms leveraging Alternating Least Squares (ALS), Kalman filters, and graph-based methods to predict traffic flow across unobserved street segments.
 
@@ -51,25 +53,27 @@ cv:
         end_date: 2022
         highlights:
           - Directed a 12-person cross-functional engineering team (ML, Backend, Frontend, Design), earning a rapid promotion by demonstrating strong architectural orchestration and product delivery.
+          - Led the end-to-end development of a COVID-19 back-to-work SaaS product for real-time social distancing and face mask detection, integrating low-cost edge compute clusters (4-5 devices) with existing enterprise CCTV networks to process 20+ concurrent camera feeds.
+          - Led the development of the AWS-hosted customer backend and frontend dashboards—featuring spatial violation heatmaps and real-time alerting—powered by an exclusive label-free adaptive training algorithm that automatically optimized models for each unique physical environment without manual annotation.
           - Engineered an "Adaptive Learning" pipeline utilizing knowledge distillation to compress large-scale object detection models into highly efficient, label-free architectures, optimizing gradient calculations to execute within strict 2GB RAM constraints on Jetson Nano devices.
           - Led the end-to-end development of real-time computer vision products, integrating PyTorch models with TensorRT and TFLite for high-speed edge inference, achieving up to 130% reduction in inference time and >90% accuracy across 100+ edge devices.
 
       - company: IREEN
         position: Computer Vision Engineer
         location: Remote, Austria
-        start_date: 2019
+        start_date: 2018
         end_date: 2020
         highlights:
-          - Designed a multimodal valuation system in TensorFlow 2, fusing structured property data with aerial and street-level imagery via multi-branch Convolutional Neural Networks (CNNs), achieving 89% prediction accuracy.
-          - Engineered spatial and location-based features by integrating the Google Places API, mapping neighborhood amenities into structured grid representations, which improved overall model precision by 10%.
+          - Designed a multimodal real-estate valuation system in TensorFlow 2, fusing structured property data with aerial, street-level imagery, and interior images via multi-branch Convolutional Neural Networks (CNNs), achieving 6% prediction error.
+          - Engineered spatial and location-based features by integrating the Google Places API, mapping neighborhood amenities into structured grid representations, which improved overall baseline model accuracy by 4%.
           - Built an automated scene detection pipeline to classify and route unstructured interior images using rule-based heuristics and CNN feature extraction, resolving data quality bottlenecks.
           - Deployed scalable, Dockerized inference services on GCP GPU virtual machines using FastAPI, delivering high-availability real-time predictions for the product frontend.
 
       - company: ISENSE
         position: Data Scientist
         location: Tehran, Iran
-        start_date: 2018
-        end_date: 2019
+        start_date: 2017
+        end_date: 2018
         highlights:
           - Engineered data-driven Structural Health Monitoring (SHM) models for critical infrastructure by applying System Identification and subspace methods in Python and MATLAB, achieving over 90% accuracy and increasing prediction precision by 30%.
           - Developed an interactive MATLAB visualization suite to translate complex dynamic system models into actionable safety insights for non-technical stakeholders.
@@ -84,13 +88,13 @@ cv:
 
     skills:
       - label: Languages
-        details: Python, Go, SQL, MATLAB
+        details: Python, Go, MATLAB
       - label: Machine Learning & CV
-        details: PyTorch, TensorFlow, MLX, TensorRT, DeepStream, TFLite, DeepETA, Knowledge Distillation, Agentic AI, RAG
+        details: PyTorch, TensorFlow, TensorRT, DeepStream, TFLite, OpenCV, Agentic AI, RAG
       - label: MLOps & Infrastructure
-        details: Kubernetes, Helm, Docker, Apache Kafka, AWS (SageMaker, ECS), GCP, MLflow, DVC
+        details: Kubernetes, Helm, Docker, Apache Kafka, AWS (SageMaker, ECS), GCP, MLflow, DVC, Apache Airflow
       - label: Databases & State
-        details: Redis, ClickHouse, Milvus, MongoDB
+        details: PostgreSQL, Redis, ClickHouse, Milvus, MongoDB
 
 design:
   theme: engineeringresumes
