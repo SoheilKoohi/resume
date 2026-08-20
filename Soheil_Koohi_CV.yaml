@@ -23,7 +23,7 @@ cv:
           - Scaled the Go-based agentic architecture on Kubernetes using Helm, evaluating and integrating memory layers like Redis and ClickHouse to manage state, automating 85% of all support tickets.
           - Developed an unsupervised clustering pipeline segmenting drivers into three safety tiers from ban records, trip ratings, and NLP analysis of passenger comments, now a core upstream feature for cross-functional intervention workflows.
           - Engineered a real-time trip safety scoring engine analyzing live route deviations, time-of-day, and geographic isolation with a Gaussian Mixture Model (GMM); A/B tests showed a 10x increase in unsafe ride recall at only a 2x increase in back-office alarms.
-          - Shipped a compressed (1MB) on-device computer vision pipeline across iOS, Android, and Web performing real-time object detection and image quality assessment on signing up documents, cutting wrong submissions by 50% and driver sign-up time by 30%.
+          - Shipped a compressed (1MB) on-device computer vision pipeline across iOS, Android, and Web performing real-time object detection and image quality assessment on sign-up documents, cutting wrong submissions by 50% and driver sign-up time by 30%.
 
       - company: Snapp!
         position: ML Technical Lead
