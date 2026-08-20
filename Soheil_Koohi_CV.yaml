@@ -8,14 +8,14 @@ cv:
       username: soheilkoohi
   sections:
     summary:
-      - Principal Machine Learning Engineer with 9+ years building production AI systems at scale. Combines ML roadmap ownership across multiple product areas with hands-on technical leadership of cross-functional teams of 6-12 engineers, from hiring and mentoring through delivery. Technical depth across MLOps, computer vision, and agentic LLM systems, backed by high-throughput backend engineering in Python and Go.
+      - Principal Machine Learning Engineer with 9 years building production AI systems at scale. Combines ML roadmap ownership across multiple product areas with hands-on technical leadership of cross-functional teams of 6-12 engineers, from hiring and mentoring through delivery. Technical depth across MLOps, computer vision, and agentic LLM systems, backed by high-throughput backend engineering in Python and Go.
 
 
     experience:
       - company: Snapp!
         position: Principal Machine Learning Engineer
         location: Tehran, Iran
-        start_date: 2025
+        start_date: 2026-03
         end_date: present
         highlights:
           - Own the machine learning roadmap across Safety, Driver Onboarding, and Support Automation, setting quarterly technical direction with the CTO; designed the ML hiring and interview pipeline and made the final technical call on 3-5 engineering hires.
@@ -28,8 +28,8 @@ cv:
       - company: Snapp!
         position: ML Technical Lead
         location: Tehran, Iran
-        start_date: 2023
-        end_date: 2025
+        start_date: 2023-12
+        end_date: 2026-03
         highlights:
           - Led and mentored a 6-person cross-functional data team to rebuild the core ETA product, architecting a deep learning residual model (adapting Uber's DeeprETA) on top of the routing engine, improving driver ETA accuracy by 5%.
           - Deployed resilient model serving pipelines on Nvidia Triton and Kubernetes, handling 3000 RPS at under 100ms latency.
@@ -40,8 +40,8 @@ cv:
       - company: Neoxi
         position: Senior Machine Learning Engineer
         location: Remote, USA
-        start_date: 2022
-        end_date: 2023
+        start_date: 2022-09
+        end_date: 2023-12
         highlights:
           - Architected a multi-camera ReID tracking system, extracting high-dimensional feature embeddings on edge devices and streaming them to centralized servers via Apache Kafka.
           - Optimized on-device inference using Nvidia DeepStream, detecting and tracking pedestrians and tiny objects in real-time edge environments, improving tracking mAP by 17% over 6 months.
@@ -51,8 +51,8 @@ cv:
       - company: Galliot
         position: ML Team Lead
         location: Remote, USA
-        start_date: 2020
-        end_date: 2022
+        start_date: 2020-01
+        end_date: 2022-09
         highlights:
           - Led a 12-person cross-functional team (ML, Backend, Frontend, Design) from research through production release, owning the technical roadmap and mentoring the ML engineers; promoted into the role from within the team.
           - Led end-to-end development of a COVID-19 back-to-work SaaS product for real-time social distancing and face mask detection, integrating low-cost edge clusters with enterprise CCTV networks to process 20+ concurrent camera feeds.
@@ -62,8 +62,8 @@ cv:
       - company: IREEN
         position: Computer Vision Engineer
         location: Remote, Austria
-        start_date: 2018
-        end_date: 2020
+        start_date: 2018-12
+        end_date: 2020-01
         highlights:
           - Designed a multimodal real-estate valuation system in TensorFlow 2, fusing structured property data with aerial, street-level imagery, and interior images via multi-branch Convolutional Neural Networks (CNNs), achieving 6% prediction error.
           - Engineered location features from the Google Places API, mapping neighborhood amenities into grid representations and improving baseline model accuracy by 4%.
@@ -72,8 +72,8 @@ cv:
       - company: ISENSE
         position: Data Scientist
         location: Tehran, Iran
-        start_date: 2017
-        end_date: 2018
+        start_date: 2017-10
+        end_date: 2018-11
         highlights:
           - Engineered data-driven Structural Health Monitoring (SHM) models for critical infrastructure using System Identification and subspace methods in Python and MATLAB, increasing prediction precision by 30%.
           - Led data science as the sole ML expert in an 8-person startup, building MATLAB visualization tools that translated dynamic system models into safety insights for non-technical stakeholders and mentoring civil engineers in data science workflows.
@@ -82,8 +82,8 @@ cv:
       - institution: University of Tehran
         area: Engineering Science (Mathematical Engineering)
         degree: Bachelor of Science
-        start_date: 2013
-        end_date: 2017
+        start_date: 2013-09
+        end_date: 2017-09
 
 
     skills:
@@ -113,3 +113,19 @@ design:
   header:
     connections:
       phone_number_format: international
+
+locale:
+  language: english
+  month_abbreviations:
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
