@@ -23,7 +23,7 @@ cv:
           - Scaled the Go-based agentic architecture on Kubernetes using Helm, evaluating and integrating memory layers like Redis and ClickHouse to manage state, automating 85% of all support tickets.
           - Developed an unsupervised clustering pipeline segmenting drivers into three safety tiers from ban records, trip ratings, and NLP analysis of passenger comments, now a core upstream feature for cross-functional intervention workflows.
           - Engineered a real-time trip safety scoring engine analyzing live route deviations, time-of-day, and geographic isolation with a Gaussian Mixture Model (GMM); A/B tests showed a 10x increase in unsafe ride recall at only a 2x increase in back-office alarms.
-          - Architected a compressed (1MB) on-device computer vision pipeline across iOS, Android, and Web performing real-time object detection and image quality assessment on onboarding documents, cutting wrong submissions by 50% and driver sign-up time by 30%.
+          - Shipped a compressed (1MB) on-device computer vision pipeline across iOS, Android, and Web performing real-time object detection and image quality assessment on onboarding documents, cutting wrong submissions by 50% and driver sign-up time by 30%.
 
       - company: Snapp!
         position: ML Technical Lead
@@ -43,9 +43,9 @@ cv:
         start_date: 2022-09
         end_date: 2023-12
         highlights:
-          - Architected a multi-camera ReID tracking system, extracting high-dimensional feature embeddings on edge devices and streaming them to centralized servers via Apache Kafka.
+          - Built a multi-camera ReID tracking system, extracting high-dimensional feature embeddings on edge devices and streaming them to centralized servers via Apache Kafka.
           - Optimized on-device inference using Nvidia DeepStream, detecting and tracking pedestrians and tiny objects in real-time edge environments, improving tracking mAP by 17% over 6 months.
-          - Engineered the server-side cross-camera matching logic, upgrading the embedding vector database from Redis to Milvus, scaling to hundreds of concurrent camera feeds and millions of active embeddings.
+          - Rebuilt the server-side cross-camera matching logic, upgrading the embedding vector database from Redis to Milvus, scaling to hundreds of concurrent camera feeds and millions of active embeddings.
           - Managed end-to-end training and deployment infrastructure on AWS SageMaker and ECS, cutting development time by 70% with 100% deployment automation.
 
       - company: Galliot
@@ -66,7 +66,7 @@ cv:
         end_date: 2020-01
         highlights:
           - Designed a multimodal real-estate valuation system in TensorFlow 2, fusing structured property data with aerial, street-level imagery, and interior images via multi-branch Convolutional Neural Networks (CNNs), achieving 6% prediction error.
-          - Engineered location features from the Google Places API, mapping neighborhood amenities into grid representations and improving baseline model accuracy by 4%.
+          - Derived location features from the Google Places API, mapping neighborhood amenities into grid representations and improving baseline model accuracy by 4%.
           - Deployed Dockerized inference services on GCP GPU virtual machines using FastAPI, serving real-time predictions to the product frontend.
 
       - company: ISENSE
@@ -75,7 +75,7 @@ cv:
         start_date: 2017-10
         end_date: 2018-11
         highlights:
-          - Engineered data-driven Structural Health Monitoring (SHM) models for critical infrastructure using System Identification and subspace methods in Python and MATLAB, increasing prediction precision by 30%.
+          - Built data-driven Structural Health Monitoring (SHM) models for critical infrastructure using System Identification and subspace methods in Python and MATLAB, increasing prediction precision by 30%.
           - Led data science as the sole ML expert in an 8-person startup, building MATLAB visualization tools that translated dynamic system models into safety insights for non-technical stakeholders and mentoring civil engineers in data science workflows.
 
     education:
