@@ -1,0 +1,89 @@
+cv:
+  name: Soheil Koohi
+  location: Tehran, Iran
+  email: soheil.koohi@gmail.com
+  social_networks:
+    - network: LinkedIn
+      username: soheilkoohi
+  sections:
+    summary:
+      - Principal Machine Learning Engineer with nearly a decade of experience designing scalable MLOps infrastructure, end-to-end computer vision pipelines, and agentic AI architectures. Adept at bridging complex mathematical modeling with high-throughput backend engineering using Python and Go. Proven track record of leading cross-functional teams to deliver production-grade, distributed AI systems in high-concurrency environments.
+
+    experience:
+      - company: Snapp!
+        position: Principal Machine Learning Engineer (Promoted from ML Tech Lead)
+        location: Tehran, Iran
+        start_date: 2023
+        end_date: present
+        highlights:
+          - Architected a graph-based state machine support agent in Go, orchestrating complex language model workflows across specialized nodes (toxicity safeguards, intent-based triage, external tool-calling).
+          - Scaled the Go-based agentic architecture on Kubernetes using Helm, evaluating and integrating memory layers like Redis and ClickHouse to manage state, successfully automating 85% of all support tickets.
+          - Directed a 6-person cross-functional data team to overhaul the core ETA product, architecting a deep learning residual model (adapting Uber's DeepETA) on top of the routing engine, improving driver ETA accuracy by 5%.
+          - Deployed highly resilient model serving pipelines using Nvidia Triton and Kubernetes, reducing deployment time to under 5 minutes and successfully handling up to 3000 RPS.
+          - Engineered a high-throughput, real-time speed generation pipeline utilizing Apache Kafka and Kafka Streams to ingest and process ~1 million spatial-temporal location messages per second.
+          - Designed scalable historical speed imputation algorithms leveraging Alternating Least Squares (ALS), Kalman filters, and graph-based methods to predict traffic flow across unobserved street segments.
+          - Engineered dynamic risk-assessment models for the Safety team, analyzing multi-modal driver features to cluster risk tiers, serving as a core upstream feature for multiple cross-functional intervention workflows.
+          - Architected a highly compressed (1MB) on-device computer vision pipeline deployed across iOS, Android, and Web clients to perform real-time bounding box localization for driver onboarding documents.
+          - Orchestrated local model training and auto-labeling workflows for Persian document datasets utilizing the MLX framework and X-AnyLabeling, accelerating the driver sign-up process by 30%.
+
+      - company: Neoxi
+        position: Senior Machine Learning Engineer
+        location: Remote, USA
+        start_date: 2022
+        end_date: 2023
+        highlights:
+          - Architected a scalable multi-camera ReID tracking system, extracting high-dimensional feature embeddings on edge devices and streaming them to centralized servers via Apache Kafka.
+          - Optimized on-device inference using Nvidia DeepStream, successfully detecting and tracking pedestrians and tiny objects in real-time edge environments, improving tracking mAP by 17% over 6 months.
+          - Engineered the server-side cross-camera matching logic, upgrading the embedding vector database from Redis to Milvus to efficiently query and match global tracking labels, scaling to support hundreds of concurrent camera feeds and millions of active embeddings.
+          - Managed end-to-end model training and deployment infrastructure, leveraging AWS SageMaker and ECS, achieving a 70% reduction in development time and 100% deployment automation.
+
+      - company: Galliot
+        position: ML Team Lead
+        location: Remote, USA
+        start_date: 2020
+        end_date: 2022
+        highlights:
+          - Directed a 12-person cross-functional engineering team (ML, Backend, Frontend, Design), earning a rapid promotion by demonstrating strong architectural orchestration and product delivery.
+          - Engineered an "Adaptive Learning" pipeline utilizing knowledge distillation to compress large-scale object detection models into highly efficient, label-free architectures, optimizing gradient calculations to execute within strict 2GB RAM constraints on Jetson Nano devices.
+          - Led the end-to-end development of real-time computer vision products, integrating PyTorch models with TensorRT and TFLite for high-speed edge inference, achieving up to 130% reduction in inference time and >90% accuracy across 100+ edge devices.
+
+      - company: IREEN
+        position: Computer Vision Engineer
+        location: Remote, Austria
+        start_date: 2019
+        end_date: 2020
+        highlights:
+          - Designed a multimodal valuation system in TensorFlow 2, fusing structured property data with aerial and street-level imagery via multi-branch Convolutional Neural Networks (CNNs), achieving 89% prediction accuracy.
+          - Engineered spatial and location-based features by integrating the Google Places API, mapping neighborhood amenities into structured grid representations, which improved overall model precision by 10%.
+          - Built an automated scene detection pipeline to classify and route unstructured interior images using rule-based heuristics and CNN feature extraction, resolving data quality bottlenecks.
+          - Deployed scalable, Dockerized inference services on GCP GPU virtual machines using FastAPI, delivering high-availability real-time predictions for the product frontend.
+
+      - company: ISENSE
+        position: Data Scientist
+        location: Tehran, Iran
+        start_date: 2018
+        end_date: 2019
+        highlights:
+          - Engineered data-driven Structural Health Monitoring (SHM) models for critical infrastructure by applying System Identification and subspace methods in Python and MATLAB, achieving over 90% accuracy and increasing prediction precision by 30%.
+          - Developed an interactive MATLAB visualization suite to translate complex dynamic system models into actionable safety insights for non-technical stakeholders.
+          - Led data science initiatives as the sole technical ML expert within an 8-person startup, automating and accelerating structural analysis while mentoring civil engineers in data science workflows.
+
+    education:
+      - institution: University of Tehran
+        area: Engineering Science (Mathematical Engineering)
+        degree: BS
+        start_date: 2013
+        end_date: 2017
+
+    skills:
+      - label: Languages
+        details: Python, Go, SQL, MATLAB
+      - label: Machine Learning & CV
+        details: PyTorch, TensorFlow, MLX, TensorRT, DeepStream, TFLite, DeepETA, Knowledge Distillation, Agentic AI, RAG
+      - label: MLOps & Infrastructure
+        details: Kubernetes, Helm, Docker, Apache Kafka, AWS (SageMaker, ECS), GCP, MLflow, DVC
+      - label: Databases & State
+        details: Redis, ClickHouse, Milvus, MongoDB
+
+design:
+  theme: engineeringresumes

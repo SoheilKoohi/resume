@@ -1,0 +1,6 @@
+# Build output — regenerate with `make` or the GitHub Action
+rendercv_output/
+site/
+
+# macOS
+.DS_Store
