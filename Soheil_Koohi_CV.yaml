@@ -19,7 +19,7 @@ cv:
           - Architected a graph-based state machine support LLM agent in Go, orchestrating complex language model workflows across specialized nodes (toxicity safeguards, intent-based triage, external tool-calling).
           - Scaled the Go-based agentic architecture on Kubernetes using Helm, evaluating and integrating memory layers like Redis and ClickHouse to manage state, successfully automating 85% of all support tickets.
           - Developed an unsupervised clustering pipeline segmenting drivers into three safety tiers from historical ban records, trip ratings, and NLP analysis of passenger comments, serving as a core upstream feature for multiple cross-functional intervention workflows.
-          - Engineered a real-time trip safety scoring engine analyzing live route deviations, time-of-day, and geographic isolation using Gaussian Mixture Model (GMM), achieving a 10x increase in unsafe ride recall while limiting the increase in total back-office alarms to just 2x.
+          - Engineered a real-time trip safety scoring engine analyzing live route deviations, time-of-day, and geographic isolation with a Gaussian Mixture Model (GMM); A/B tests showed a 10x increase in unsafe ride recall at only a 2x increase in back-office alarms.
           - Architected a highly compressed (1MB) on-device computer vision pipeline across iOS, Android, and Web clients performing real-time object detection and image quality assessment on driver onboarding documents, cutting wrong document submissions by 50%.
           - Orchestrated local model training and auto-labeling workflows for Persian document datasets utilizing the MLX framework and X-AnyLabeling, accelerating the driver sign-up process by 30%.
 
@@ -31,7 +31,7 @@ cv:
         highlights:
           - Directed a 6-person cross-functional data team to evolve the core ETA product, architecting a deep learning residual model (adapting Uber's DeeprETA) on top of the routing engine, improving driver ETA accuracy by 5%.
           - Deployed highly resilient model serving pipelines using Nvidia Triton and Kubernetes, successfully handling up to 3000 RPS with under 100ms latency.
-          - Architected a fully automated MLOps pipeline utilizing Apache Airflow, MLflow, and DVC, accelerating the distributed model retraining and deployment cycle from every 3 months to a weekly cadence while ensuring complete reproducibility.
+          - Architected a fully automated MLOps pipeline with Apache Airflow, MLflow, and DVC, adding model monitoring and drift detection to cut the distributed retraining and deployment cycle from quarterly to weekly with full reproducibility.
           - Engineered a high-throughput, real-time speed generation pipeline utilizing Apache Kafka and Kafka Streams to ingest and process ~1 million spatial-temporal location messages per second.
           - Designed scalable historical speed imputation algorithms leveraging Alternating Least Squares (ALS), Kalman filters, and graph-based methods to predict traffic flow across unobserved street segments.
 
@@ -88,11 +88,11 @@ cv:
 
     skills:
       - label: Languages
-        details: Python, Go, MATLAB
+        details: Python, Go, SQL, MATLAB
       - label: Machine Learning & CV
-        details: PyTorch, TensorFlow, TensorRT, DeepStream, TFLite, OpenCV, Agentic AI, RAG
+        details: PyTorch, TensorFlow, TensorRT, Nvidia Triton, DeepStream, TFLite, OpenCV, Agentic AI, RAG
       - label: MLOps & Infrastructure
-        details: Kubernetes, Helm, Docker, Apache Kafka, Apache Airflow, MLflow, DVC, AWS, GCP
+        details: Kubernetes, Helm, ArgoCD, Docker, Apache Kafka, Apache Airflow, MLflow, DVC, AWS, GCP
       - label: Databases & State
         details: PostgreSQL, Redis, ClickHouse, Milvus, MongoDB
 
