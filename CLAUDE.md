@@ -33,11 +33,26 @@ There are no tests or linters. Verification is visual and mechanical — see bel
 
 ```
 Soheil_Koohi_CV.yaml
-  └─ rendercv render → rendercv_output/{pdf,html,md,typ,*.png}
-       └─ scripts/build.sh assembles site/
-            ├─ index.html  (the rendercv HTML + an injected "Download PDF" bar)
-            └─ Soheil_Koohi_CV.pdf, .md, page PNGs
+  ├─ rendercv render      → rendercv_output/{pdf,html,md,typ,*.png}
+  └─ scripts/build_site.py → site/index.html   (custom landing page)
+       scripts/build.sh assembles site/:
+         ├─ index.html          generated from the YAML, not RenderCV's HTML
+         ├─ profile.jpg         copied from images/profile-square.jpg
+         └─ Soheil_Koohi_CV.pdf, .md
 ```
+
+`scripts/build_site.py` reads the same YAML the PDF is built from, so the page
+and the PDF cannot drift. Every string on the page comes from the YAML; only
+layout and the readout-strip labels live in the script. It needs **PyYAML** —
+`build.sh` uses the system `python3` when it has it, otherwise falls back to
+`uv run --with pyyaml`, and CI installs it alongside RenderCV.
+
+The readout strip near the top of the page pulls its figures out of the
+highlight text with regexes (`READOUTS` in the script). Change a number in the
+YAML and the strip follows; change the *wording* around a number and the
+matching chip silently disappears, so re-check the page after editing those
+bullets. Consecutive roles at the same employer are grouped into one block, so
+a promotion reads as a promotion.
 
 `.github/workflows/render.yml` runs on push to `main`: builds, uploads
 `rendercv_output/` as a workflow artifact named `resume`, and deploys `site/`

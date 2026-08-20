@@ -30,7 +30,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install RenderCV
-        run: pip install "rendercv[full]==${RENDERCV_VERSION}"
+        run: pip install "rendercv[full]==${RENDERCV_VERSION}" pyyaml
 
       - name: Build
         run: ./scripts/build.sh

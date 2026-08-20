@@ -46,7 +46,10 @@ Output lands in `rendercv_output/`:
 | `Soheil_Koohi_CV.typ` | intermediate Typst source |
 
 `scripts/build.sh` also assembles `site/`, the exact folder that gets published
-to GitHub Pages.
+to GitHub Pages. The landing page there is not the RenderCV HTML — it is a
+custom layout rendered by `scripts/build_site.py` from the same YAML, so the
+site and the PDF can never disagree. The portrait it uses is
+`images/profile-square.jpg`.
 
 No `uv`? `pipx install "rendercv[full]==2.8"` works too — `scripts/build.sh`
 uses whatever `rendercv` it finds on `PATH`.

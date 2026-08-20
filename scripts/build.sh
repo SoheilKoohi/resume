@@ -35,26 +35,19 @@ echo ">> assembling ${SITE_DIR}/"
 rm -rf "$SITE_DIR"
 mkdir -p "$SITE_DIR"
 cp "$PDF" "$SITE_DIR/"
-cp "$HTML" "$SITE_DIR/index.html"
 cp "${OUT_DIR}/${BASENAME}.md" "$SITE_DIR/" 2>/dev/null || true
-cp "${OUT_DIR}/${BASENAME}"_*.png "$SITE_DIR/" 2>/dev/null || true
 
-# Prepend a small download bar to the HTML version.
-python3 - "$SITE_DIR/index.html" "${BASENAME}.pdf" <<'PY'
-import sys, pathlib
-page, pdf = pathlib.Path(sys.argv[1]), sys.argv[2]
-html = page.read_text(encoding="utf-8")
-bar = (
-    '<div style="font-family:system-ui,-apple-system,sans-serif;text-align:center;'
-    'padding:12px;border-bottom:1px solid #ddd;margin-bottom:24px">'
-    f'<a href="{pdf}" style="color:#0b5cad;text-decoration:none;font-weight:600">'
-    'Download PDF</a></div>'
-)
-marker = "<body>"
-if marker in html and "Download PDF" not in html:
-    html = html.replace(marker, marker + bar, 1)
-    page.write_text(html, encoding="utf-8")
-PY
+# The landing page is generated from the same YAML, so the site and the PDF can
+# never disagree. Needs PyYAML; fall back to uv when the system Python lacks it.
+if python3 -c "import yaml" >/dev/null 2>&1; then
+  PYTHON=(python3)
+elif command -v uv >/dev/null 2>&1; then
+  PYTHON=(uv run --quiet --python 3.12 --with pyyaml python)
+else
+  echo "error: need Python with PyYAML installed, or 'uv' on PATH" >&2
+  exit 1
+fi
+"${PYTHON[@]}" scripts/build_site.py "$CV_FILE"
 
 echo
 echo "done:"
