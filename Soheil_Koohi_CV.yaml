@@ -88,11 +88,15 @@ cv:
 
     skills:
       - label: Languages
-        details: Python, Go, SQL, MATLAB
-      - label: Machine Learning & CV
-        details: PyTorch, TensorFlow, TensorRT, Nvidia Triton, DeepStream, TFLite, OpenCV, Agentic AI, RAG
+        details: Python, Go, SQL, C++, MATLAB
+      - label: Machine Learning
+        details: PyTorch, TensorFlow, MLX, Hugging Face Transformers, LLM Fine-tuning, Agentic AI, RAG
+      - label: Computer Vision & Edge
+        details: TensorRT, Nvidia Triton, ONNX, DeepStream, TFLite, OpenCV, Knowledge Distillation
       - label: MLOps & Infrastructure
-        details: Kubernetes, Helm, ArgoCD, Docker, Apache Kafka, Apache Airflow, MLflow, DVC, AWS, GCP
+        details: Kubernetes, Helm, ArgoCD, Docker, Terraform, CI/CD, Git, Apache Kafka, Apache Spark, Apache Airflow, MLflow, DVC, AWS, GCP
+      - label: Domains
+        details: Computer Vision, NLP, Time Series Forecasting, Recommendation Systems, A/B Testing & Experimentation, Model Monitoring
       - label: Databases & State
         details: PostgreSQL, Redis, ClickHouse, Milvus, MongoDB
 
