@@ -11,20 +11,27 @@ cv:
 
     experience:
       - company: Snapp!
-        position: Principal Machine Learning Engineer (Promoted from ML Tech Lead)
+        position: Principal Machine Learning Engineer
         location: Tehran, Iran
-        start_date: 2023
+        start_date: 2025
         end_date: present
         highlights:
           - Architected a graph-based state machine support agent in Go, orchestrating complex language model workflows across specialized nodes (toxicity safeguards, intent-based triage, external tool-calling).
           - Scaled the Go-based agentic architecture on Kubernetes using Helm, evaluating and integrating memory layers like Redis and ClickHouse to manage state, successfully automating 85% of all support tickets.
+          - Engineered dynamic risk-assessment models for the Safety team, analyzing multi-modal driver features to cluster risk tiers, serving as a core upstream feature for multiple cross-functional intervention workflows.
+          - Architected a highly compressed (1MB) on-device computer vision pipeline deployed across iOS, Android, and Web clients to perform real-time bounding box localization for driver onboarding documents.
+          - Orchestrated local model training and auto-labeling workflows for Persian document datasets utilizing the MLX framework and X-AnyLabeling, accelerating the driver sign-up process by 30%.
+
+      - company: Snapp!
+        position: ML Technical Lead
+        location: Tehran, Iran
+        start_date: 2023
+        end_date: 2025
+        highlights:
           - Directed a 6-person cross-functional data team to overhaul the core ETA product, architecting a deep learning residual model (adapting Uber's DeepETA) on top of the routing engine, improving driver ETA accuracy by 5%.
           - Deployed highly resilient model serving pipelines using Nvidia Triton and Kubernetes, reducing deployment time to under 5 minutes and successfully handling up to 3000 RPS.
           - Engineered a high-throughput, real-time speed generation pipeline utilizing Apache Kafka and Kafka Streams to ingest and process ~1 million spatial-temporal location messages per second.
           - Designed scalable historical speed imputation algorithms leveraging Alternating Least Squares (ALS), Kalman filters, and graph-based methods to predict traffic flow across unobserved street segments.
-          - Engineered dynamic risk-assessment models for the Safety team, analyzing multi-modal driver features to cluster risk tiers, serving as a core upstream feature for multiple cross-functional intervention workflows.
-          - Architected a highly compressed (1MB) on-device computer vision pipeline deployed across iOS, Android, and Web clients to perform real-time bounding box localization for driver onboarding documents.
-          - Orchestrated local model training and auto-labeling workflows for Persian document datasets utilizing the MLX framework and X-AnyLabeling, accelerating the driver sign-up process by 30%.
 
       - company: Neoxi
         position: Senior Machine Learning Engineer
