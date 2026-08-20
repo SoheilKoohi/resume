@@ -7,7 +7,7 @@ cv:
       username: soheilkoohi
   sections:
     summary:
-      - Principal Machine Learning Engineer with nearly a decade of experience designing scalable MLOps infrastructure, end-to-end computer vision pipelines, and agentic AI architectures. Adept at bridging complex mathematical modeling with high-throughput backend engineering using Python and Go. Proven track record of leading cross-functional teams to deliver production-grade, distributed AI systems in high-concurrency environments.
+      - Principal Machine Learning Engineer with nearly a decade of experience designing scalable MLOps infrastructure, end-to-end computer vision pipelines, and agentic AI architectures. Bridges complex mathematical modeling with high-throughput backend engineering in Python and Go, leading cross-functional teams to deliver production-grade distributed AI systems in high-concurrency environments.
 
     experience:
       - company: Snapp!
@@ -18,9 +18,9 @@ cv:
         highlights:
           - Architected a graph-based state machine support LLM agent in Go, orchestrating complex language model workflows across specialized nodes (toxicity safeguards, intent-based triage, external tool-calling).
           - Scaled the Go-based agentic architecture on Kubernetes using Helm, evaluating and integrating memory layers like Redis and ClickHouse to manage state, successfully automating 85% of all support tickets.
-          - Developed an unsupervised clustering pipeline to segment drivers into three distinct safety tiers (Safe, Medium, Unsafe) by extracting features from historical ban records, trip ratings, and NLP-based analysis of passenger comments, serving as a core upstream feature for multiple cross-functional intervention workflows.
+          - Developed an unsupervised clustering pipeline segmenting drivers into three safety tiers from historical ban records, trip ratings, and NLP analysis of passenger comments, serving as a core upstream feature for multiple cross-functional intervention workflows.
           - Engineered a real-time trip safety scoring engine analyzing live route deviations, time-of-day, and geographic isolation using Gaussian Mixture Model (GMM), achieving a 10x increase in unsafe ride recall while limiting the increase in total back-office alarms to just 2x.
-          - Architected a highly compressed (1MB) on-device computer vision pipeline deployed across iOS, Android, and Web clients to perform real-time object detection for driver onboarding documents and image quality assessment making the wrong document submission decrease by 50%.
+          - Architected a highly compressed (1MB) on-device computer vision pipeline across iOS, Android, and Web clients performing real-time object detection and image quality assessment on driver onboarding documents, cutting wrong document submissions by 50%.
           - Orchestrated local model training and auto-labeling workflows for Persian document datasets utilizing the MLX framework and X-AnyLabeling, accelerating the driver sign-up process by 30%.
 
       - company: Snapp!
@@ -43,7 +43,7 @@ cv:
         highlights:
           - Architected a scalable multi-camera ReID tracking system, extracting high-dimensional feature embeddings on edge devices and streaming them to centralized servers via Apache Kafka.
           - Optimized on-device inference using Nvidia DeepStream, successfully detecting and tracking pedestrians and tiny objects in real-time edge environments, improving tracking mAP by 17% over 6 months.
-          - Engineered the server-side cross-camera matching logic, upgrading the embedding vector database from Redis to Milvus to efficiently query and match global tracking labels, scaling to support hundreds of concurrent camera feeds and millions of active embeddings.
+          - Engineered the server-side cross-camera matching logic, upgrading the embedding vector database from Redis to Milvus, scaling to hundreds of concurrent camera feeds and millions of active embeddings.
           - Managed end-to-end model training and deployment infrastructure, leveraging AWS SageMaker and ECS, achieving a 70% reduction in development time and 100% deployment automation.
 
       - company: Galliot
@@ -53,10 +53,10 @@ cv:
         end_date: 2022
         highlights:
           - Directed a 12-person cross-functional engineering team (ML, Backend, Frontend, Design), earning a rapid promotion by demonstrating strong architectural orchestration and product delivery.
-          - Led the end-to-end development of a COVID-19 back-to-work SaaS product for real-time social distancing and face mask detection, integrating low-cost edge compute clusters (4-5 devices) with existing enterprise CCTV networks to process 20+ concurrent camera feeds.
-          - Led the development of the AWS-hosted customer backend and frontend dashboards—featuring spatial violation heatmaps and real-time alerting—powered by an exclusive label-free adaptive training algorithm that automatically optimized models for each unique physical environment without manual annotation.
+          - Led end-to-end development of a COVID-19 back-to-work SaaS product for real-time social distancing and face mask detection, integrating low-cost edge clusters with enterprise CCTV networks to process 20+ concurrent camera feeds.
+          - Led the development of the AWS-hosted customer backend and frontend dashboards, featuring spatial violation heatmaps and real-time alerting.
           - Engineered an "Adaptive Learning" pipeline utilizing knowledge distillation to compress large-scale object detection models into highly efficient, label-free architectures, optimizing gradient calculations to execute within strict 2GB RAM constraints on Jetson Nano devices.
-          - Led the end-to-end development of real-time computer vision products, integrating PyTorch models with TensorRT and TFLite for high-speed edge inference, achieving up to 130% reduction in inference time and >90% accuracy across 100+ edge devices.
+          - Integrated PyTorch models with TensorRT and TFLite for high-speed edge inference, achieving up to 130% reduction in inference time and >90% accuracy across 100+ edge devices.
 
       - company: IREEN
         position: Computer Vision Engineer
@@ -75,7 +75,7 @@ cv:
         start_date: 2017
         end_date: 2018
         highlights:
-          - Engineered data-driven Structural Health Monitoring (SHM) models for critical infrastructure by applying System Identification and subspace methods in Python and MATLAB, achieving over 90% accuracy and increasing prediction precision by 30%.
+          - Engineered data-driven Structural Health Monitoring (SHM) models for critical infrastructure using System Identification and subspace methods in Python and MATLAB, increasing prediction precision by 30%.
           - Developed an interactive MATLAB visualization suite to translate complex dynamic system models into actionable safety insights for non-technical stakeholders.
           - Led data science initiatives as the sole technical ML expert within an 8-person startup, automating and accelerating structural analysis while mentoring civil engineers in data science workflows.
 
@@ -92,9 +92,14 @@ cv:
       - label: Machine Learning & CV
         details: PyTorch, TensorFlow, TensorRT, DeepStream, TFLite, OpenCV, Agentic AI, RAG
       - label: MLOps & Infrastructure
-        details: Kubernetes, Helm, Docker, Apache Kafka, AWS (SageMaker, ECS), GCP, MLflow, DVC, Apache Airflow
+        details: Kubernetes, Helm, Docker, Apache Kafka, Apache Airflow, MLflow, DVC, AWS, GCP
       - label: Databases & State
         details: PostgreSQL, Redis, ClickHouse, Milvus, MongoDB
 
 design:
   theme: engineeringresumes
+  page:
+    top_margin: 1.2cm
+    bottom_margin: 1.2cm
+    left_margin: 1.6cm
+    right_margin: 1.6cm
