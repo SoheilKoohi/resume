@@ -51,6 +51,16 @@ to GitHub Pages.
 No `uv`? `pipx install "rendercv[full]==2.8"` works too — `scripts/build.sh`
 uses whatever `rendercv` it finds on `PATH`.
 
+## Skills
+
+`.claude/skills/` holds 23 vendored Claude Code skills for resume and job-search
+work (tailoring, ATS optimization, cover letters, interview prep, negotiation).
+They load automatically when working in this repo — see
+[`.claude/skills/README.md`](.claude/skills/README.md) for sources and licenses.
+
+They read resumes as Markdown, so feed them `rendercv_output/Soheil_Koohi_CV.md`
+from `make build` and apply accepted changes back into the YAML.
+
 ## CI
 
 `.github/workflows/render.yml` runs on every push to `main`:
