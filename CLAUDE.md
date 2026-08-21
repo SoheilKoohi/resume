@@ -47,12 +47,13 @@ layout and the readout-strip labels live in the script. It needs **PyYAML** —
 `build.sh` uses the system `python3` when it has it, otherwise falls back to
 `uv run --with pyyaml`, and CI installs it alongside RenderCV.
 
-The readout strip near the top of the page pulls its figures out of the
-highlight text with regexes (`READOUTS` in the script). Change a number in the
-YAML and the strip follows; change the *wording* around a number and the
-matching chip silently disappears, so re-check the page after editing those
-bullets. Consecutive roles at the same employer are grouped into one block, so
-a promotion reads as a promotion.
+The readout strip near the top of the page is curated, not scraped: the four
+cells in `READOUTS` state scope (years, serving load, team size, roadmap areas)
+because no single CV bullet says those things on its own. Each cell carries an
+`evidence` regex naming the CV phrase it rests on, and the build prints a warning
+to stderr when one stops matching — so edit the YAML freely, but read the build
+output. Consecutive roles at the same employer are grouped into one block, so a
+promotion reads as a promotion.
 
 `.github/workflows/render.yml` runs on push to `main`: builds, uploads
 `rendercv_output/` as a workflow artifact named `resume`, and deploys `site/`

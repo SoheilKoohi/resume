@@ -22,14 +22,15 @@ SITE = ROOT / "site"
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
           "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
-# The readout strip. Each entry pulls its number straight out of the YAML text,
-# so the figures can never drift from the CV; only the labels are curated here.
+# The readout strip. These are chosen, not scraped: they answer the questions a
+# hiring manager screens on at Principal level, which no single bullet states on
+# its own. `evidence` is the phrase in the CV each one rests on — the build warns
+# if it stops matching, so the strip cannot quietly outlive the CV behind it.
 READOUTS = [
-    (r"automating (\d+)% of all support tickets", "{}%", "tickets automated"),
-    (r"~?(\d+) million spatial-temporal location messages per second", "~{}M/sec", "messages ingested"),
-    (r"handling (\d+) RPS", "{}", "requests per second"),
-    (r"under (\d+ms) latency", "<{}", "serving latency"),
-    (r"across (\d+)\+ edge devices", "{}+", "edge devices"),
+    ("9+", "years in production ML", r"with 9\+? years"),
+    ("3,000", "RPS in production serving", r"handling 3,?000 RPS"),
+    ("10-12", "engineers led", r"12-person cross-functional team"),
+    ("4", "product areas owned", r"Safety, Driver Signup, Support Automation, and ETA"),
 ]
 
 
@@ -48,15 +49,16 @@ def esc(text) -> str:
 
 
 def readouts(cv: dict) -> list[tuple[str, str]]:
-    blob = " ".join(
+    blob = cv["sections"]["summary"][0] + " " + " ".join(
         h for role in cv["sections"]["experience"] for h in role.get("highlights", [])
     )
-    found = []
-    for pattern, value_fmt, label in READOUTS:
-        m = re.search(pattern, blob)
-        if m:
-            found.append((value_fmt.format(m.group(1)), label))
-    return found
+    cells = []
+    for value, label, evidence in READOUTS:
+        if not re.search(evidence, blob):
+            print(f"warning: readout {value!r} no longer matches the CV "
+                  f"(looked for /{evidence}/)", file=sys.stderr)
+        cells.append((value, label))
+    return cells
 
 
 def group_by_company(roles: list[dict]) -> list[dict]:
