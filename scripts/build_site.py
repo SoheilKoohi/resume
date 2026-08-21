@@ -30,7 +30,7 @@ READOUTS = [
     ("9+", "years in production ML", r"with 9\+? years"),
     ("3,000", "RPS in production serving", r"handling 3,?000 RPS"),
     ("10-12", "engineers led", r"12-person cross-functional team"),
-    ("4", "product areas owned", r"Safety, Driver Signup, Support Automation, and ETA"),
+    ("4", "product areas owned today", r"Safety, Driver Signup, Support Automation, and ETA"),
 ]
 
 
@@ -231,13 +231,13 @@ a {{ color:inherit; }}
 
 .readout {{ display:grid; grid-template-columns:repeat(auto-fit,minmax(8.5rem,1fr));
   border-top:1px solid var(--hair); border-bottom:1px solid var(--hair); }}
-.readout__cell {{ padding:1.1rem 1.1rem 1.1rem 0; border-right:1px solid var(--hair); }}
+.readout__cell {{ padding:1.15rem 1rem; text-align:center; border-right:1px solid var(--hair); }}
 .readout__cell:last-child {{ border-right:0; }}
-.readout__cell + .readout__cell {{ padding-left:1.1rem; }}
 .readout__num {{ display:block; font-family:var(--mono); font-weight:500;
   font-size:1.5rem; letter-spacing:-.03em; color:var(--accent); }}
-.readout__label {{ display:block; margin-top:.3rem; font-family:var(--display);
-  font-size:.6875rem; letter-spacing:.05em; text-transform:uppercase; color:var(--slate); }}
+.readout__label {{ display:block; margin-top:.4rem; font-family:var(--display);
+  font-size:.8125rem; letter-spacing:.045em; text-transform:uppercase; color:var(--slate);
+  text-wrap:balance; }}
 
 .section {{ margin-top:4rem; }}
 .section__title {{ font-family:var(--mono); font-size:.75rem; letter-spacing:.14em;
@@ -297,7 +297,7 @@ a {{ color:inherit; }}
   .rail__nav {{ display:none; }}
   .employer,.skill,.edu {{ grid-template-columns:1fr; gap:1rem; }}
   .employer__id {{ position:static; }}
-  .readout__cell {{ padding-left:0 !important; border-right:0; border-bottom:1px solid var(--hair); }}
+  .readout__cell {{ padding:1rem 0; border-right:0; border-bottom:1px solid var(--hair); }}
   .readout__cell:last-child {{ border-bottom:0; }}
 }}
 @media print {{
